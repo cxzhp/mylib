@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+FORMAT_CONVERT_H	lib/formatConvert.h	2;"	d
+SCAN_IMAGE_H	lib/scanImage.h	2;"	d
+ThreeDigits	lib/scanImage.cpp	/^std::string ThreeDigits(int val){$/;"	f
+intToString	lib/formatConvert.cpp	/^std::string intToString(int integerVar){$/;"	f
+main	app/distanceTransform.cpp	/^int main(int, char** argv)$/;"	f
+main	app/imageSegmentation.cpp	/^int main(int, char** argv)$/;"	f
+scanImageEfficiet	lib/scanImage.cpp	/^void scanImageEfficiet(cv::Mat image){$/;"	f
+stringToInt	lib/formatConvert.cpp	/^int stringToInt(std::string stringVar){$/;"	f

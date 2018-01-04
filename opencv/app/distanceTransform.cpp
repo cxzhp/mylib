@@ -29,6 +29,8 @@ int main(int, char** argv)
 
     // Show source image
     imshow("Source Image", src);
+    //scanImageEfficiet(src);
+
 
 //! [load_image]
 
@@ -39,18 +41,22 @@ int main(int, char** argv)
     threshold(bw, bw, 40, 255, CV_THRESH_BINARY | CV_THRESH_OTSU);
     imshow("Binary Image", bw);
 
-    scanImageEfficiet(bw);
+    //scanImageEfficiet(bw);
 //! [bin]
 
 //! [dist]
     // Perform the distance transform algorithm
     Mat dist;
+    Mat distN;
     distanceTransform(bw, dist, CV_DIST_L2, 3);
+    scanImageEfficiet(dist);
+    imshow("Distance Transform Image_0", dist);
 
     // Normalize the distance image for range = {0.0, 1.0}
     // so we can visualize and threshold it
-    normalize(dist, dist, 0, 1., NORM_MINMAX);
-    imshow("Distance Transform Image", dist);
+    normalize(dist, distN, 0, 1., NORM_MINMAX);
+    imshow("Distance Transform Image", distN);
+    scanImageEfficiet(distN);
 //! [dist]
 
 
