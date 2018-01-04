@@ -1,4 +1,5 @@
 //http://blog.csdn.net/dcrmg/article/details/52517991
+//make pic with "ABCD"  to "ABCD thinly"
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
